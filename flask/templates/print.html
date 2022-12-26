@@ -1,0 +1,35 @@
+<!-- print.html  -->
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/print.css') }}">
+     </head>
+   <body>
+       <center>
+      <p>
+        <br><br>
+        <div class="title">
+         <h1>List Of Restaurants</h1>
+        </div>
+         <br>
+         <table id="myTable" border = 1 style="background-color:rgb(179, 204, 208); width:60%" >
+            {% for ttl in headings %}
+                <td><center><b> {{ ttl }} </b></center></td> 
+            {% endfor %}
+            {% for key, value in dict.items() %}
+            <tr>
+
+                            {% for sub, grade in value.items() %}
+
+                                    <td> <center> {{ grade }} </center> </td>
+
+                            {% endfor %}
+            </tr>
+            {% endfor %}
+            
+         </table>
+      </p>
+      </center>
+   </body>
+
+
+<html>

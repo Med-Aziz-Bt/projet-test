@@ -1,0 +1,58 @@
+body
+{
+  background-image: url("image.jpg");
+  height:100vh;
+  color:rgb(43, 42, 42);
+  width:100vw;
+  box-styling:border-box;
+  text-align:center;
+}
+h1
+{
+  text-transform:uppercase;
+  color: rgb(0, 12, 22);
+}
+.title{
+  background-color:aliceblue;
+  width: 60%;
+  margin: auto;
+  height: 50px;
+  text-align: center ;
+  margin-top: 20px;
+}
+#myTable {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 40%;
+  margin:20px auto;
+}
+
+#myTable td, #myTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color:white;
+}
+#myTable tr:hover {background-color: #ddd;}
+
+#myTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: rgb(7, 3, 194);
+}
+
+#submit 
+{
+   width:14%;
+   margin:0 auto;
+   margin-top:10px;
+   padding:10px 20px;
+   background-color:rgb(7, 3, 194);
+   font-size:18px;
+   border:none;
+   border:1px solid rgb(7, 3, 194);
+   border-radius:5px;
+   color:white;
+   outline:none;
+  
+}
